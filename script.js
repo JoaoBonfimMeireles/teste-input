@@ -20,7 +20,7 @@ function jogo() {
 let inputField = document.getElementById("input")
 
 inputField.addEventListener("click", function() {
-    this.value = ""})
+    inputField.value = ""})
 
 let button = document.getElementById("button");
 button.addEventListener("click", jogo);
