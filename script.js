@@ -4,8 +4,6 @@ let mensagem = "Você é um gênio!";
 let mensagem2 = "Você errou. Tente novamente.";
 let alterar = document.getElementById("text");
 let tentativa = [];
-let input
-
 
 function jogo() {
     let input = Number(document.getElementById("input").value);
@@ -19,13 +17,10 @@ function jogo() {
     console.log(tentativa);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    let inputField = document.getElementById("input")
+let inputField = document.getElementById("input")
 
-    inputField.addEventListener("click", function() {
-        this.value = ""
-    })
-})
+inputField.addEventListener("click", function() {
+    this.value = ""})
 
 let button = document.getElementById("button");
 button.addEventListener("click", jogo);
